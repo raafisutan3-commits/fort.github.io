@@ -10,7 +10,7 @@ window.addEventListener('load', () => {
         cancelButtonText: 'No',
     }).then((result) => {
         if (result.isConfirmed) {
-            document.querySelector('.song').play();
+            document.querySelector('.hbd.mpeg').play();
             animationTimeline();
         } else {
             animationTimeline();
@@ -270,3 +270,4 @@ const animationTimeline = () => {
         tl.restart();
     });
 }
+
