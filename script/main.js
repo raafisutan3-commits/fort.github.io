@@ -10,7 +10,7 @@ window.addEventListener('load', () => {
         cancelButtonText: 'No',
     }).then((result) => {
         if (result.isConfirmed) {
-            document.querySelector('.music').play();
+            document.querySelector('.song').play();
             animationTimeline();
         } else {
             animationTimeline();
@@ -270,6 +270,7 @@ const animationTimeline = () => {
         tl.restart();
     });
 }
+
 
 
 
